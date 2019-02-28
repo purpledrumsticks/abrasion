@@ -1,0 +1,115 @@
+* {
+  font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.links a {
+  cursor: pointer;
+}
+
+.links a, .links a:hover, .links a:active, .links a:visited, .links a:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
+.links a:hover {
+  color: #d3d3d3;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 85vh;
+  width: 100vw;
+}
+
+.mainDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 90vh;
+  min-width: 100vw;
+  background-color: #fff;
+  cursor: pointer;
+  flex: 1 0 auto;
+}
+
+.mainImage {
+  height: 30vh;
+  width: 75vw;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.myVideo {
+  display: flex;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.sliderDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.slider {
+  min-height: 50vh;
+  min-width: 100vw;
+}
+
+.sssprev, .sssnext {
+  50px;
+}
+
+.links {
+  display: flex;
+  padding: 15px 30px 15px 5px;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #d3d3d3;
+  border-bottom: 0px;
+  border-left: 0px;
+  border-right: 0px;
+  flex-shrink: 0;
+}
+
+.links p {
+  cursor: pointer;
+  margin: 10px;
+}
+
+.links p:hover {
+  color: #d3d3d3;
+}
+
+.links.whiteBackground {
+  background-color: #fff;
+  margin-top: 30px;
+}
+
+.links.blackBackground {
+  background-color: #000;
+  color: #fff;
+}
+
+@media (min-width: 1000px) {
+  .mainImage {
+    height: 70vh;
+    width: 65vw;
+    margin-right: 50px;
+  }
+
+  .links {
+    padding: 15px 40px 15px 10px;
+  }
+}
