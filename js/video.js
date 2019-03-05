@@ -2,12 +2,21 @@
 var isPlaying = false;
 
 var video = document.getElementById('video');
+var playButton = document.getElementById('play');
+var videoOverlay = document.getElementById('videoOverlay');
 
 var playVideo = function playVideo (stateOfVideo) {
   stateOfVideo === false ? video.play() : video.pause();
 }
 
-video.onclick = function () {
-  isPlaying === false ? isPlaying = true : isPlaying = false;
+playButton.onclick = function () {
+  videoOverlay.style = 'display: none';
   playVideo(isPlaying);
+  isPlaying === false ? isPlaying = true : isPlaying = false;
+}
+
+video.onclick = function () {
+  console.log(isPlaying);
+  playVideo(isPlaying);
+  isPlaying === false ? isPlaying = true : isPlaying = false;
 }

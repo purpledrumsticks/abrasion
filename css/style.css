@@ -1,32 +1,7 @@
-* {
-  font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
-}
-
 body {
   display: flex;
   flex-direction: column;
   height: 100%;
-}
-
-.links a {
-  cursor: pointer;
-}
-
-.links a, .links a:hover, .links a:active, .links a:visited, .links a:focus {
-  text-decoration: none;
-  color: inherit;
-}
-
-.links a:hover {
-  color: #d3d3d3;
-}
-
-.main {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 85vh;
-  width: 100vw;
 }
 
 .mainDiv {
@@ -34,82 +9,76 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  min-height: 90vh;
+  min-height: 100vh;
   min-width: 100vw;
-  background-color: #fff;
-  cursor: pointer;
+  background-color: #000;
   flex: 1 0 auto;
 }
 
-.mainImage {
-  height: 30vh;
-  width: 75vw;
-  margin-right: 20px;
-  cursor: pointer;
-}
-
-.myVideo {
-  display: flex;
-  min-height: 100vh;
-  min-width: 100vw;
-}
-
-.sliderDiv {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 100vh;
-  width: 100vw;
-}
-
-.slider {
-  min-height: 50vh;
-  min-width: 100vw;
-}
-
-.sssprev, .sssnext {
-  50px;
+.links a, .links a:hover, .links a:active, .links a:visited, .links a:focus {
+  text-decoration: none;
+  color: inherit;
+  padding: 50px;
+  font-weight: bold;
 }
 
 .links {
   display: flex;
-  padding: 15px 30px 15px 5px;
   justify-content: space-between;
+  position: absolute;
+  z-index: 3;
+  color: #f1f1f1;
+  width: 100%;
+  padding-top: 20px;
+}
+
+.abrasionLogo {
+  height: 70px;
+  padding-left: 20px;
+  padding-top: 30px;
+}
+
+.shop {
+  padding-right: 75px;
+  font-family: 'Lato', sans-serif;
+}
+
+.myVideo {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+}
+
+.videoOverlay {
+  display: flex;
+  justify-content: center;
   align-items: center;
-  border: 1px solid #d3d3d3;
-  border-bottom: 0px;
-  border-left: 0px;
-  border-right: 0px;
-  flex-shrink: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  min-height: 100vh;
+  min-width: 100vw;
+  z-index: 2;
+  position: absolute;
+  font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
+  font-size: 1.5em;
 }
 
-.links p {
+.play {
   cursor: pointer;
-  margin: 10px;
-}
-
-.links p:hover {
-  color: #d3d3d3;
-}
-
-.links.whiteBackground {
-  background-color: #fff;
-  margin-top: 30px;
-}
-
-.links.blackBackground {
-  background-color: #000;
-  color: #fff;
 }
 
 @media (min-width: 1000px) {
-  .mainImage {
-    height: 70vh;
-    width: 65vw;
-    margin-right: 50px;
+  .myVideo {
+    min-width: 100vw;
   }
 
-  .links {
-    padding: 15px 40px 15px 10px;
+  .abrasionLogo {
+    height: 150px;
+    padding-left: 50px;
+    padding-top: 0px;
+  }
+
+  .links a, .links a:hover, .links a:active, .links a:visited, .links a:focus {
+    font-size: 3em;
   }
 }

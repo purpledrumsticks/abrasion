@@ -5,21 +5,25 @@
   <title>Abrasion Clothing Co.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Abrasion clothing co">
-  <meta name="author" content="Inigo Montoya">
+  <meta name="author" content="Inigo Montoya (@myspacefriend)">
   <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel=icon href=./assets/favicon.ico>
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
   <link rel="stylesheet" href="./css/normalize.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
-
 <body>
-  <div class="mainDiv">
-    <a href="http://abrasion.bigcartel.com/">
-      <img class="mainImage" src="./assets/definition.jpg" alt="abrasion - The act or process of damaging or wearing away something by rubbing, grinding or scraping. An injury caused by something that rubs or scrapes against the skin." />
-    </a>
+  <div class="links">
+    <img class="abrasionLogo" src="./assets/whiteLogo.png" alt="abrasion">
+    <a class="shop" href="http://abrasion.bigcartel.com/">shop</a>
   </div>
-  <div class="links blackBackground">
-    <a href="http://abrasion.bigcartel.com/">Shop</a>
+  <div class="mainDiv">
+    <div id="videoOverlay" class="videoOverlay">
+      <p id="play" class="play">Play</p>
+    </div>
+    <video autoplay loop playsinline id="video" class="myVideo">
+      <source src="IMG_0849.mp4" type="video/mp4">
+    </video>
   </div>
 </body>
 <script src="./js/video.js"></script>
