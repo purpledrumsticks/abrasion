@@ -12,14 +12,18 @@ body {
   min-height: 100vh;
   min-width: 100vw;
   background-color: #000;
+  background-image: url('../assets/hippieJumpChinatown.jpg');
+  background-size: cover;
+  background-position: 35% 50%;
   flex: 1 0 auto;
 }
 
 .links a, .links a:hover, .links a:active, .links a:visited, .links a:focus {
   text-decoration: none;
   color: inherit;
-  padding: 50px;
+  padding: 50px 35px;
   font-weight: bold;
+  font-size: 2em;
 }
 
 .links {
@@ -33,7 +37,7 @@ body {
 }
 
 .abrasionLogo {
-  height: 70px;
+  height: 95px;
   padding-left: 20px;
   padding-top: 30px;
 }
@@ -43,42 +47,21 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-.myVideo {
-  position: relative;
-  z-index: 1;
-  width: 100%;
-}
-
-.videoOverlay {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-  min-height: 100vh;
-  min-width: 100vw;
-  z-index: 2;
-  position: absolute;
-  font-family: Courier New, Courier, Lucida Sans Typewriter, Lucida Typewriter, monospace;
-  font-size: 1.5em;
-}
-
-.play {
-  cursor: pointer;
-}
-
-@media (min-width: 1000px) {
-  .myVideo {
-    min-width: 100vw;
-  }
-
+@media (min-width: 768px) {
   .abrasionLogo {
-    height: 150px;
+    height: 225px;
     padding-left: 50px;
     padding-top: 0px;
   }
 
   .links a, .links a:hover, .links a:active, .links a:visited, .links a:focus {
     font-size: 3em;
+    padding: 60px 105px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .links a, .links a:hover, .links a:active, .links a:visited, .links a:focus {
+    font-size: 4em;
   }
 }
