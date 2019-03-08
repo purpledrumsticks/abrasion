@@ -51,7 +51,7 @@ body {
 
 @media (min-width: 365px) {
   .linkDiv {
-    padding: 52px 20px 0px 30px;
+    padding: 52px 25px 0px 30px;
   }
 
   .linkDiv a, .linkDiv a:hover, .linkDiv a:active, .linkDiv a:visited, .linkDiv a:focus {
