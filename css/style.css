@@ -18,15 +18,22 @@ body {
   flex: 1 0 auto;
 }
 
-.links a, .links a:hover, .links a:active, .links a:visited, .links a:focus {
-  text-decoration: none;
-  color: inherit;
-  padding: 50px 35px;
-  font-weight: bold;
-  font-size: 2em;
+.linkDiv {
+  display: flex;
+  justify-content: space-between;
+  padding: 55px 10px;
 }
 
-.links {
+.linkDiv a, .linkDiv a:hover, .linkDiv a:active, .linkDiv a:visited, .linkDiv a:focus {
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+  font-size: 1em;
+  margin-right: 7.5px;
+}
+
+.head {
   display: flex;
   justify-content: space-between;
   position: absolute;
@@ -38,13 +45,18 @@ body {
 
 .abrasionLogo {
   height: 95px;
-  padding-left: 20px;
+  padding-left: 5px;
   padding-top: 30px;
 }
 
-.shop {
-  padding-right: 75px;
-  font-family: 'Lato', sans-serif;
+@media (min-width: 365px) {
+  .linkDiv {
+    padding: 52px 20px 0px 30px;
+  }
+
+  .linkDiv a, .linkDiv a:hover, .linkDiv a:active, .linkDiv a:visited, .linkDiv a:focus {
+    font-size: 1.3em;
+  }
 }
 
 @media (min-width: 768px) {
@@ -54,14 +66,22 @@ body {
     padding-top: 0px;
   }
 
-  .links a, .links a:hover, .links a:active, .links a:visited, .links a:focus {
-    font-size: 3em;
-    padding: 60px 105px;
+  .linkDiv {
+    padding: 65px 65px 0px 0px;
+  }
+
+  .linkDiv a, .linkDiv a:hover, .linkDiv a:active, .linkDiv a:visited, .linkDiv a:focus {
+    font-size: 2em;
+    margin-right: 5px;
   }
 }
 
 @media (min-width: 1000px) {
-  .links a, .links a:hover, .links a:active, .links a:visited, .links a:focus {
-    font-size: 4em;
+  .linkDiv {
+    padding: 65px 90px 0px 0px;
+  }
+
+  .linkDiv a, .linkDiv a:hover, .linkDiv a:active, .linkDiv a:visited, .linkDiv a:focus {
+    font-size: 3em;
   }
 }
