@@ -49,6 +49,20 @@ body {
   padding-top: 29px;
 }
 
+.mainContactDiv, .mainNewsDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+  background-color: #000;
+  flex: 1 0 auto;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: 1.3em;
+}
+
 @media (min-width: 365px) {
   .linkDiv {
     padding: 52px 25px 0px 15px;
