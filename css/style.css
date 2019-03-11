@@ -21,7 +21,7 @@ body {
 .linkDiv {
   display: flex;
   justify-content: space-between;
-  padding: 55px 10px;
+  padding: 23px 10px;
 }
 
 .linkDiv a, .linkDiv a:hover, .linkDiv a:active, .linkDiv a:visited, .linkDiv a:focus {
@@ -46,7 +46,6 @@ body {
 .abrasionLogo {
   height: 87px;
   padding-left: 17px;
-  padding-top: 29px;
 }
 
 .mainContactDiv, .mainNewsDiv {
@@ -65,7 +64,7 @@ body {
 
 @media (min-width: 365px) {
   .linkDiv {
-    padding: 52px 25px 0px 15px;
+    padding: 20px 25px 0px 15px;
   }
 
   .linkDiv a, .linkDiv a:hover, .linkDiv a:active, .linkDiv a:visited, .linkDiv a:focus {
@@ -92,7 +91,7 @@ body {
 
 @media (min-width: 1000px) {
   .linkDiv {
-    padding: 65px 90px 0px 0px;
+    padding: 55px 90px 0px 0px;
   }
 
   .linkDiv a, .linkDiv a:hover, .linkDiv a:active, .linkDiv a:visited, .linkDiv a:focus {
