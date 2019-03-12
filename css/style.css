@@ -24,6 +24,7 @@ html, body {
   display: flex;
   justify-content: space-between;
   padding: 23px 10px;
+  max-width: 100%;
 }
 
 .linkDiv a, .linkDiv a:hover, .linkDiv a:active, .linkDiv a:visited, .linkDiv a:focus {
