@@ -67,11 +67,11 @@ html, body {
 
 @media (min-width: 365px) {
   .linkDiv {
-    padding: 20px 25px 0px 15px;
+    padding: 23px 0px 0px 15px;
   }
 
   .linkDiv a, .linkDiv a:hover, .linkDiv a:active, .linkDiv a:visited, .linkDiv a:focus {
-    font-size: 1.3em;
+    font-size: 1em;
   }
 }
 
